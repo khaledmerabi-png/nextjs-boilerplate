@@ -18,7 +18,7 @@ export default function Dashboard() {
 
       <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
         <a
-          href="/create-assessment"
+          href="https://nextjs-boilerplate-git-main-khaledmerabi-5263s-projects.vercel.app/create-assessment"
           style={{
             padding: "20px",
             width: "200px",
@@ -36,7 +36,7 @@ export default function Dashboard() {
         </a>
 
         <a
-          href="#"
+          href="https://nextjs-boilerplate-git-main-khaledmerabi-5263s-projects.vercel.app/dashboard"
           style={{
             padding: "20px",
             width: "200px",
@@ -53,6 +53,13 @@ export default function Dashboard() {
           My Assessments
         </a>
       </div>
+
+      <p style={{ marginTop: "30px" }}>
+        Test link:{" "}
+        <a href="https://nextjs-boilerplate-git-main-khaledmerabi-5263s-projects.vercel.app/create-assessment">
+          Open Create Assessment
+        </a>
+      </p>
     </main>
   );
 }
