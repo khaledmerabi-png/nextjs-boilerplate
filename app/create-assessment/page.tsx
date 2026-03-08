@@ -18,7 +18,7 @@ export default function CreateAssessment() {
 
       <div
         style={{
-          maxWidth: "500px",
+          maxWidth: "700px",
           display: "flex",
           flexDirection: "column",
           gap: "20px",
@@ -27,8 +27,34 @@ export default function CreateAssessment() {
         <input
           placeholder="Assessment Name"
           style={{
-            padding: "12px",
-            borderRadius: "8px",
+            padding: "14px",
+            borderRadius: "10px",
+            border: "1px solid #ccc",
+            fontSize: "16px",
+          }}
+        />
+
+        <select
+          style={{
+            padding: "14px",
+            borderRadius: "10px",
+            border: "1px solid #ccc",
+            fontSize: "16px",
+          }}
+          defaultValue=""
+        >
+          <option value="" disabled>
+            Select Programme
+          </option>
+          <option value="DP">DP</option>
+          <option value="MYP">MYP</option>
+        </select>
+
+        <input
+          placeholder="Subject Group"
+          style={{
+            padding: "14px",
+            borderRadius: "10px",
             border: "1px solid #ccc",
             fontSize: "16px",
           }}
@@ -37,8 +63,18 @@ export default function CreateAssessment() {
         <input
           placeholder="Subject"
           style={{
-            padding: "12px",
-            borderRadius: "8px",
+            padding: "14px",
+            borderRadius: "10px",
+            border: "1px solid #ccc",
+            fontSize: "16px",
+          }}
+        />
+
+        <input
+          placeholder="Rubric / Component"
+          style={{
+            padding: "14px",
+            borderRadius: "10px",
             border: "1px solid #ccc",
             fontSize: "16px",
           }}
@@ -48,8 +84,8 @@ export default function CreateAssessment() {
           placeholder="Number of Classes"
           type="number"
           style={{
-            padding: "12px",
-            borderRadius: "8px",
+            padding: "14px",
+            borderRadius: "10px",
             border: "1px solid #ccc",
             fontSize: "16px",
           }}
@@ -57,16 +93,17 @@ export default function CreateAssessment() {
 
         <button
           style={{
-            padding: "12px",
+            padding: "14px",
             background: "#2563eb",
             color: "white",
             border: "none",
             borderRadius: "10px",
             fontSize: "16px",
             cursor: "pointer",
+            fontWeight: "bold",
           }}
         >
-          Create Assessment
+          Continue
         </button>
       </div>
     </main>
