@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Dashboard() {
   return (
     <main
@@ -17,20 +19,23 @@ export default function Dashboard() {
       </p>
 
       <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-        <button
+        <Link
+          href="/create-assessment"
           style={{
             padding: "20px",
             width: "200px",
             background: "#2563eb",
             color: "white",
-            border: "none",
             borderRadius: "10px",
             fontSize: "16px",
             cursor: "pointer",
+            textAlign: "center",
+            textDecoration: "none",
+            display: "inline-block",
           }}
         >
           Create Assessment
-        </button>
+        </Link>
 
         <button
           style={{
