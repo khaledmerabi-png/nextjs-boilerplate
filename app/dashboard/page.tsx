@@ -17,49 +17,63 @@ export default function Dashboard() {
       </p>
 
       <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-        <a
-          href="https://nextjs-boilerplate-git-main-khaledmerabi-5263s-projects.vercel.app/create-assessment"
+        <button
+          onClick={() => {
+            window.location.href =
+              "https://nextjs-boilerplate-git-main-khaledmerabi-5263s-projects.vercel.app/create-assessment";
+          }}
           style={{
             padding: "20px",
-            width: "200px",
+            width: "300px",
             background: "#2563eb",
             color: "white",
+            border: "none",
             borderRadius: "10px",
             fontSize: "16px",
             cursor: "pointer",
-            textAlign: "center",
-            textDecoration: "none",
-            display: "inline-block",
           }}
         >
           Create Assessment
-        </a>
+        </button>
 
-        <a
-          href="https://nextjs-boilerplate-git-main-khaledmerabi-5263s-projects.vercel.app/dashboard"
+        <button
+          onClick={() => {
+            alert("My Assessments page is not built yet.");
+          }}
           style={{
             padding: "20px",
-            width: "200px",
+            width: "300px",
             background: "#64748b",
             color: "white",
+            border: "none",
             borderRadius: "10px",
             fontSize: "16px",
             cursor: "pointer",
-            textAlign: "center",
-            textDecoration: "none",
-            display: "inline-block",
           }}
         >
           My Assessments
-        </a>
+        </button>
       </div>
 
-      <p style={{ marginTop: "30px" }}>
-        Test link:{" "}
-        <a href="https://nextjs-boilerplate-git-main-khaledmerabi-5263s-projects.vercel.app/create-assessment">
+      <div style={{ marginTop: "30px" }}>
+        <button
+          onClick={() => {
+            window.location.href =
+              "https://nextjs-boilerplate-git-main-khaledmerabi-5263s-projects.vercel.app/create-assessment";
+          }}
+          style={{
+            background: "transparent",
+            border: "none",
+            padding: 0,
+            color: "#2563eb",
+            textDecoration: "underline",
+            cursor: "pointer",
+            fontSize: "16px",
+          }}
+        >
           Open Create Assessment
-        </a>
-      </p>
+        </button>
+      </div>
     </main>
   );
 }
