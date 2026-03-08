@@ -16,21 +16,43 @@ export default function CreateAssessment() {
         Set up a new assessment for analysis.
       </p>
 
-      <div style={{ maxWidth: "500px", display: "flex", flexDirection: "column", gap: "20px" }}>
+      <div
+        style={{
+          maxWidth: "500px",
+          display: "flex",
+          flexDirection: "column",
+          gap: "20px",
+        }}
+      >
         <input
           placeholder="Assessment Name"
-          style={{ padding: "12px", borderRadius: "8px", border: "1px solid #ccc" }}
+          style={{
+            padding: "12px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            fontSize: "16px",
+          }}
         />
 
         <input
           placeholder="Subject"
-          style={{ padding: "12px", borderRadius: "8px", border: "1px solid #ccc" }}
+          style={{
+            padding: "12px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            fontSize: "16px",
+          }}
         />
 
         <input
           placeholder="Number of Classes"
           type="number"
-          style={{ padding: "12px", borderRadius: "8px", border: "1px solid #ccc" }}
+          style={{
+            padding: "12px",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            fontSize: "16px",
+          }}
         />
 
         <button
